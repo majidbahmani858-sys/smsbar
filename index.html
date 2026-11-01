@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMSBar | ارسال پیامک تبلیغاتی و هدفمند</title>
+<meta name="description" content="SMSBar ارائه‌دهنده خدمات پیامکی: ارسال پیامک انبوه، منطقه‌ای، بر اساس دکل، پیامک صوتی، پترنی و OTP، اتصال به سایت و مشاوره متن پیامک.">
+<meta name="theme-color" content="#5B21B6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="tower" viewBox="0 0 24 24"><path d="M12 12v9M8 21h8M7.5 7.5a6 6 0 0 0 0 6M16.5 7.5a6 6 0 0 1 0 6M4.5 5a10 10 0 0 0 0 11M19.5 5a10 10 0 0 1 0 11"/><circle cx="12" cy="10" r="1.5"/></symbol>
+<symbol id="mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+<symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+<symbol id="file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 13h6M9 17h6"/></symbol>
+<symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></symbol>
+<symbol id="route" viewBox="0 0 24 24"><path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2zM9 4v14M15 6v14"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M17 6a3 3 0 0 1 0 5M17 14a5 5 0 0 1 4 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+</defs></svg>
+
+<header class="header" id="top">
+ <div class="container header__in">
+  <a href="#top" class="logo" aria-label="SMSBar"><span class="logo__slot" id="logo-slot">SMSBar</span><!-- جای لوگو: تگ img خود را اینجا بگذارید --></a>
+  <nav class="nav" id="nav" aria-label="منوی اصلی">
+   <a href="#top">صفحه اصلی</a><a href="#services">خدمات پیامکی</a><a href="#benefits">مزایای SMSBar</a><a href="#faq">سؤالات متداول</a><a href="#contact">تماس با ما</a>
+   <a href="#contact" class="btn btn--accent nav__cta">درخواست مشاوره</a>
+  </nav>
+  <a href="#contact" class="btn btn--accent header__cta">درخواست مشاوره</a>
+  <button class="burger" id="burger" aria-label="باز و بسته کردن منو" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero__in">
+  <div class="hero__text reveal">
+   <span class="chip">راهکارهای هوشمند پیامکی</span>
+   <h1>پیامت رو به مخاطب <em>درست</em> برسون!</h1>
+   <p>با راهکارهای هوشمند پیامکی SMSBar، سریع‌تر، هدفمندتر و مؤثرتر با مشتریان خود ارتباط برقرار کن.</p>
+   <div class="btns"><a href="#services" class="btn btn--primary">مشاهده خدمات پیامکی</a><a href="#contact" class="btn btn--accent">دریافت مشاوره رایگان</a></div>
+  </div>
+  <div class="hero__art" aria-hidden="true">
+   <div class="panel"><svg class="ic"><use href="#send"/></svg><span>پنل SMSBar</span><i class="dot"></i></div>
+   <div class="phone">
+    <div class="phone__bar"></div>
+    <div class="bubble b1">کد تأیید شما: ۴۸۲۹۱۶</div>
+    <div class="bubble b2">پیشنهاد ویژه امروز برای شما 🎁</div>
+    <div class="bubble b3">سفارش شما ارسال شد ✔</div>
+   </div>
+   <div class="float f1"><svg class="ic"><use href="#pin"/></svg></div>
+   <div class="float f2"><svg class="ic"><use href="#tower"/></svg></div>
+   <div class="float f3"><svg class="ic"><use href="#users"/></svg></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="services">
+ <div class="container">
+  <div class="head reveal"><h2>خدمات پیامکی SMSBar</h2><p>هر روش ارسال، برای یک هدف. خدمات مناسب کسب‌وکارت را انتخاب کن.</p></div>
+  <div class="grid">
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#send"/></svg></span><h3>ارسال پیامک انبوه</h3><p>ارسال سریع پیامک تبلیغاتی و اطلاع‌رسانی به تعداد زیادی مخاطب برای معرفی محصولات، خدمات و پیشنهادهای ویژه.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#pin"/></svg></span><h3>ارسال پیامک منطقه‌ای</h3><p>هدف‌گیری مخاطبان بر اساس موقعیت جغرافیایی و رساندن پیام به افراد حاضر در منطقه دلخواه.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#tower"/></svg></span><h3>پیامک بر اساس دکل مخابراتی</h3><p>هدف‌گیری بر اساس محدوده پوشش دکل‌های منتخب، متناسب با امکانات اپراتور و سرویس قابل ارائه.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#mic"/></svg></span><h3>پیامک صوتی</h3><p>ارسال پیام صوتی برای ارتباط مستقیم‌تر با مخاطبان و معرفی خدمات و پیشنهادها.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#lock"/></svg></span><h3>پیامک پترنی و OTP</h3><p>پیامک‌های الگومحور با متغیرهای قابل جایگزینی؛ مانند کد تأیید، رمز یک‌بارمصرف و پیام‌های شخصی‌سازی‌شده.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#link"/></svg></span><h3>اتصال به سایت و فروشگاه</h3><p>ارسال خودکار تأیید ثبت‌نام، وضعیت سفارش و پیام‌های سیستمی با اتصال پنل پیامکی به وب‌سایت.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#file"/></svg></span><h3>ارسال با فایل اکسل</h3><p>ارسال پیامک به فهرست شماره‌های اختصاصی مشتریان از طریق بارگذاری فایل اکسل.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#target"/></svg></span><h3>هدف‌گیری و تفکیک مخاطبان</h3><p>دسته‌بندی بر اساس جنسیت، اپراتور (همراه اول و ایرانسل)، بازه سنی، محدوده جغرافیایی و جامعه هدف.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#pen"/></svg></span><h3>مشاوره و پیشنهاد متن</h3><p>راهنمایی در انتخاب و تدوین متن مناسب پیامک، متناسب با هدف کمپین شما.</p></article>
+   <article class="card reveal"><span class="icon"><svg class="ic"><use href="#route"/></svg></span><h3>طراحی کمپین بر اساس مخاطب</h3><p>کمک به انتخاب روش ارسال، نوع پیامک و جامعه هدف بر اساس کسب‌وکار و محصول شما.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section section--tint" id="targeting">
+ <div class="container">
+  <div class="head reveal"><h2>ارسال هدفمند پیامک</h2><p>روش مناسب را انتخاب کن یا روی کارت به چپ و راست بکش.</p></div>
+  <div class="tabs reveal" id="tabs">
+   <div class="tabs__list" role="tablist">
+    <button role="tab" aria-selected="true" class="is-active">منطقه‌ای</button><button role="tab" aria-selected="false">دکل‌های مخابراتی</button><button role="tab" aria-selected="false">اپراتور</button><button role="tab" aria-selected="false">جنسیت و سن</button><button role="tab" aria-selected="false">فایل اکسل</button>
+   </div>
+   <div class="tabs__panels" id="panels">
+    <div class="tpanel is-active" role="tabpanel"><span class="big"><svg class="ic"><use href="#pin"/></svg></span><div><h3>ارسال منطقه‌ای</h3><p>پیام تبلیغاتی را فقط به افرادی برسان که در محدوده جغرافیایی موردنظر شما حضور دارند؛ مناسب کسب‌وکارهای محلی و رویدادها.</p></div></div>
+    <div class="tpanel" role="tabpanel"><span class="big"><svg class="ic"><use href="#tower"/></svg></span><div><h3>ارسال بر اساس دکل‌های مخابراتی</h3><p>هدف‌گیری مخاطبان در محدوده پوشش دکل‌های منتخب، متناسب با امکانات اپراتور و سرویس قابل ارائه.</p></div></div>
+    <div class="tpanel" role="tabpanel"><span class="big"><svg class="ic"><use href="#users"/></svg></span><div><h3>تفکیک بر اساس اپراتور</h3><p>انتخاب مخاطبان همراه اول یا ایرانسل، متناسب با نیاز کمپین و روش ارسال.</p></div></div>
+    <div class="tpanel" role="tabpanel"><span class="big"><svg class="ic"><use href="#target"/></svg></span><div><h3>تفکیک بر اساس جنسیت و بازه سنی</h3><p>پیام را برای جامعه هدف دقیق‌تر خود تنظیم کن، بر اساس معیارهای قابل ارائه سرویس.</p></div></div>
+    <div class="tpanel" role="tabpanel"><span class="big"><svg class="ic"><use href="#file"/></svg></span><div><h3>ارسال با فایل اکسل</h3><p>شماره‌های اختصاصی مشتریان خود را در فایل اکسل بارگذاری کن و پیامک را برای همان فهرست بفرست.</p></div></div>
+   </div>
+   <div class="dots" id="dots"><i class="is-active"></i><i></i><i></i><i></i><i></i></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="process">
+ <div class="container">
+  <div class="head reveal"><h2>فرایند همکاری با SMSBar</h2><p>پنج قدم ساده تا اجرای کمپین</p></div>
+  <ol class="steps">
+   <li class="reveal"><b>۱</b><h3>انتخاب نوع خدمات</h3><p>نوع خدمات پیامکی موردنیاز را مشخص کن.</p></li>
+   <li class="reveal"><b>۲</b><h3>مشخص کردن مخاطبان</h3><p>جامعه هدف کمپین را تعیین کن.</p></li>
+   <li class="reveal"><b>۳</b><h3>روش ارسال و تنظیم کمپین</h3><p>روش ارسال را انتخاب و کمپین را تنظیم کن.</p></li>
+   <li class="reveal"><b>۴</b><h3>متن پیامک و تأیید</h3><p>متن را آماده و تأیید نهایی را انجام بده.</p></li>
+   <li class="reveal"><b>۵</b><h3>اجرا و بررسی نتیجه</h3><p>کمپین اجرا می‌شود و نتیجه را بررسی می‌کنی.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="consult reveal">
+   <span class="big big--y"><svg class="ic"><use href="#pen"/></svg></span>
+   <div><h2>نمی‌دونی چه پیامی بفرستی؟ ما کمکت می‌کنیم!</h2><p>از انتخاب جامعه هدف تا پیشنهاد متن مناسب پیامک، در کنار شما هستیم تا کمپین پیامکی مؤثرتری اجرا کنید.</p></div>
+   <a href="#contact" class="btn btn--accent">درخواست راهنمایی</a>
+  </div>
+ </div>
+</section>
+
+<section class="section section--tint" id="benefits">
+ <div class="container">
+  <div class="head reveal"><h2>چرا SMSBar؟</h2></div>
+  <div class="grid grid--3">
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#send"/></svg></span><div><h3>راهکارهای متنوع ارسال</h3><p>روش‌های مختلف پیامکی برای نیازهای مختلف.</p></div></div>
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#target"/></svg></span><div><h3>هدف‌گیری دقیق‌تر</h3><p>انتخاب مخاطب بر اساس معیارهای قابل ارائه.</p></div></div>
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#route"/></svg></span><div><h3>مشاوره در انتخاب روش</h3><p>راهنمایی برای انتخاب بهترین روش ارسال.</p></div></div>
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#link"/></svg></span><div><h3>اتصال به سایت و فروشگاه</h3><p>ارسال خودکار پیامک‌های سیستمی.</p></div></div>
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#users"/></svg></span><div><h3>ارسال به مخاطبان اختصاصی</h3><p>با بارگذاری فهرست شماره‌های خودت.</p></div></div>
+   <div class="benefit reveal"><span class="icon"><svg class="ic"><use href="#pen"/></svg></span><div><h3>همراهی در طراحی کمپین</h3><p>از انتخاب مخاطب تا متن پیامک.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="faq">
+ <div class="container container--narrow">
+  <div class="head reveal"><h2>سؤالات متداول</h2></div>
+  <div class="faq reveal">
+   <details open><summary>چه روش‌هایی برای ارسال پیامک وجود دارد؟</summary><p>ارسال انبوه، منطقه‌ای، بر اساس دکل مخابراتی، پیامک صوتی، پترنی و OTP و ارسال با فایل اکسل از روش‌های موجود هستند. مشاور ما بهترین گزینه را پیشنهاد می‌دهد.</p></details>
+   <details><summary>آیا می‌توانم به شماره‌های اختصاصی خودم پیامک ارسال کنم؟</summary><p>بله، با بارگذاری فایل اکسل شماره‌های خودتان می‌توانید پیامک ارسال کنید.</p></details>
+   <details><summary>آیا امکان ارسال پیامک بر اساس منطقه وجود دارد؟</summary><p>بله، امکان هدف‌گیری بر اساس محدوده جغرافیایی و همچنین دکل‌های مخابراتی منتخب وجود دارد؛ متناسب با امکانات اپراتور و سرویس قابل ارائه.</p></details>
+   <details><summary>پیامک پترنی چه کاربردی دارد؟</summary><p>برای پیام‌های الگومحور با متغیرهای قابل جایگزینی مانند کد تأیید، رمز یک‌بارمصرف و اطلاع‌رسانی خودکار استفاده می‌شود.</p></details>
+   <details><summary>آیا امکان اتصال پنل پیامکی به سایت وجود دارد؟</summary><p>بله، پنل را می‌توان به وب‌سایت و فروشگاه اینترنتی متصل کرد تا پیامک‌های سیستمی خودکار ارسال شوند.</p></details>
+   <details><summary>آیا برای نوشتن متن پیامک هم مشاوره می‌دهید؟</summary><p>بله، تیم ما در انتخاب و تدوین متن مناسب با هدف کمپین کمکتان می‌کند.</p></details>
+   <details><summary>برای شروع همکاری چه کاری باید انجام بدهم؟</summary><p>از طریق بخش تماس با ما درخواست مشاوره بدهید؛ نوع خدمات و مخاطب هدف را همراه با تیم SMSBar مشخص می‌کنید.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="cta reveal">
+   <h2>آماده‌ای ارتباط مؤثرتری با مخاطب‌هات بسازی؟</h2>
+   <p>راهکار مناسب کسب‌وکارت رو انتخاب کن و برای شروع یک کمپین پیامکی هدفمند با ما در ارتباط باش.</p>
+   <a href="#contact" class="btn btn--accent">شروع همکاری با SMSBar</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+ <div class="container footer__grid">
+  <div><div class="logo logo--f"><span class="logo__slot">SMSBar</span><!-- جای لوگوی فوتر --></div><p>SMSBar ارائه‌دهنده خدمات پیامکی و بازاریابی پیامکی هدفمند.</p></div>
+  <div><h4>دسترسی سریع</h4><a href="#top">صفحه اصلی</a><a href="#benefits">مزایا</a><a href="#faq">سؤالات متداول</a></div>
+  <div><h4>خدمات</h4><a href="#services">پیامک انبوه و منطقه‌ای</a><a href="#targeting">ارسال هدفمند</a><a href="#process">فرایند همکاری</a></div>
+  <div><h4>تماس با ما</h4><p>تلفن: [شماره تماس]</p><p>ایمیل: [آدرس ایمیل]</p><p>آدرس: [آدرس شرکت]</p><div class="social"><a href="#" aria-label="اینستاگرام">اینستاگرام</a><a href="#" aria-label="تلگرام">تلگرام</a></div></div>
+ </div>
+ <div class="container footer__copy">© [سال] SMSBar. تمامی حقوق محفوظ است. [اطلاعات حقوقی / مجوزها]</div>
+</footer>
+</body>
+</html>
